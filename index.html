@@ -74,101 +74,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-index-html" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/02/index-html/" class="article-date">
-  <time datetime="2020-07-02T09:36:45.000Z" itemprop="datePublished">2020-07-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/02/index-html/">index.html</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <p>helloworld.</p>
-<p>你好</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/02/index-html/" data-id="ckc8hdngm000126ib4mmgecqk" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/02/hello-world/" class="article-date">
-  <time datetime="2020-07-02T09:30:57.911Z" itemprop="datePublished">2020-07-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/02/hello-world/" data-id="ckc8hdnfw000026ib1xyb0dg9" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
     <article id="post-shark-lady" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/30/shark-lady/" class="article-date">
@@ -626,71 +531,123 @@
 <p>介绍<br>rediSQL是Redis的SQLite数据库的嵌入模块，命令支持Redis几乎所有的类型和功能，支持SQL大部分语句, 使用也特别简单，下载，build后，启动redis时，加载编译后的so，就可以直接redis-cli命令行下执行SQL</p>
 <p>安装<br>安装有两种方式</p>
 <p>git clone &amp; build * release<br>docker方式<br>由于rediSQL需要rust环境，比较繁琐，我直接使用了docker hub的可用image.</p>
-<p>dalongrong/redisql (可用）<br>rediSQL开放的镜像远程服务网络有问题<br>1<br>2<br>3<br>docker pull dalongrong/redisql # ( 默认你有可用docker<br>docker run -p  127.0.0.1:6379:6379 -it  dalongrong/redisql （ 暴露6379端口）<br>redis-cli -p 6379 （ 连接的就是镜像中启动的redis)<br>试用</p>
-<p>1<br>2<br>3<br>4<br>5<br>6<br>创建数据库：REDISQL.CREATE_DB helloworld<br>创建表：REDISQL.EXEC helloworld “CREATE TABLE abc(A INT, B TEXT);”<br>查询：REDISQL.EXEC helloworld “select * from abc”<br>测试：SELECT position, dt, sum(req_pv) as req_pv FROM adm_rcmd_all_di GROUP BY dt,position having(sum(req_pv) &gt; 432683005803)  order by position,req_pv desc limit 100</p>
+<p>dalongrong/redisql (可用）<br>rediSQL开放的镜像远程服务网络有问题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker pull dalongrong/redisql <span class="comment"># ( 默认你有可用docker</span></span><br><span class="line">docker run -p  127.0.0.1:6379:6379 -it  dalongrong/redisql （ 暴露6379端口）</span><br><span class="line">redis-cli -p 6379 （ 连接的就是镜像中启动的redis)</span><br><span class="line">试用</span><br><span class="line">创建数据库：REDISQL.CREATE_DB helloworld</span><br><span class="line">创建表：REDISQL.EXEC helloworld <span class="string">"CREATE TABLE abc(A INT, B TEXT);"</span></span><br><span class="line">查询：REDISQL.EXEC helloworld <span class="string">"select * from abc"</span></span><br><span class="line">测试：SELECT position, dt, sum(req_pv) as req_pv FROM adm_rcmd_all_di GROUP BY dt,position having(sum(req_pv) &gt; 432683005803)  order by position,req_pv desc <span class="built_in">limit</span> 100</span><br></pre></td></tr></table></figure>
 <p>SQL大部分功能都可以很好支持<br>SDK<br>想与我们的工程结合肯定需要有SDK的支持，不可能命令行操作。现在rediSQL支持三种语言</p>
 <p>Python<br>Golang<br>Node.js<br>SDK实现方式都差不多，我们拿python来看一下使用方式。</p>
-<p>获取连接（建议生产时使用连接池)<br>1<br>2<br>def conn():<br>    return redis.StrictRedis(host=’localhost’, port=6379, db=0)<br>执行操作命令<br>1<br>2<br>3<br>4<br>5<br>6<br>redis = conn() # 获取连接<br>redis.execute(“REDISQL.CREATE_DB”, “db_1”) # 创建数据库<br>query = “CREATE TABLE IF NOT EXISTS table_1(id integer primary key, age int, name text)”<br>redis.execute(“REDISQL.EXEC”, “db_1”, query) # 创建表<br>q = f”INSERT INTO table_1 VALUES(1,21, ‘zhangsan’);”<br>self.redis.execute_command(“REDISQL.EXEC”, ‘db_1’, q)<br>性能测试<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71<br>72<br>73<br>74<br>75<br>76<br>77<br>78<br>79<br>80<br>81<br>82<br>83<br>84<br>85<br>86<br>87<br>88</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><h1 id="Author-kaizhang01"><a href="#Author-kaizhang01" class="headerlink" title="Author: kaizhang01"></a>Author: kaizhang01</h1><p>import asyncio<br>import aioredis<br>import random<br>import redis<br>import time</p>
-<p>def conn():<br>    loop = asyncio.get_event_loop()<br>    conn_co = aioredis.create_pool(‘redis://localhost’, minsize=10, maxsize=300, loop=loop)<br>    redis_co = asyncio.gather(*[conn_co])<br>    redis = loop.run_until_complete(redis_co)<br>    redis = redis[0]<br>    return redis</p>
-<p>def new_conn():<br>    # return redis.Redis(host=’localhost’, port=6379, db=1)<br>    # return redis.StrictRedis(connection_pool =<br>    #         redis.BlockingConnectionPool(<br>    #             max_connections = 15,<br>    #             timeout = 10))<br>    return redis.StrictRedis(host=’localhost’, port=6379, db=0)</p>
-<p>class RedisSQL():<br>    “””redis sql test”””</p>
-<pre><code>def __init__(self):
-    self.table_name = &apos;adm_rcmd_all_di&apos;
-    self.redis = new_conn()
-    self.dts = [
-        &quot;2019-09-10&quot;, &quot;2019-09-11&quot;,
-        &quot;2019-09-12&quot;, &quot;2019-09-13&quot;,
-        &quot;2019-09-14&quot;, &quot;2019-09-15&quot;,
-        &quot;2019-09-16&quot;, &quot;2019-09-17&quot;, &quot;2019-09-18&quot;,
-    ]
-    self.authors = [
-        &quot;lisi&quot;,
-        &quot;zhangsan&quot;,
-        &quot;wangqiang&quot;
-    ]
-    self.position = [
-        &apos;0300&apos;, &apos;0200&apos;
-    ]
+<p>获取连接（建议生产时使用连接池)</p>
+<pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">conn</span><span class="params">()</span>:</span>
+    <span class="keyword">return</span> redis.StrictRedis(host=<span class="string">'localhost'</span>, port=<span class="number">6379</span>, db=<span class="number">0</span>)
+执行操作命令
+redis = conn() <span class="comment"># 获取连接</span>
+redis.execute(<span class="string">"REDISQL.CREATE_DB"</span>, <span class="string">"db_1"</span>) <span class="comment"># 创建数据库</span>
+query = <span class="string">"CREATE TABLE IF NOT EXISTS table_1(id integer primary key, age int, name text)"</span> 
+redis.execute(<span class="string">"REDISQL.EXEC"</span>, <span class="string">"db_1"</span>, query) <span class="comment"># 创建表</span>
+q = <span class="string">f"INSERT INTO table_1 VALUES(1,21, 'zhangsan');"</span>
+self.redis.execute_command(<span class="string">"REDISQL.EXEC"</span>, <span class="string">'db_1'</span>, q)
+性能测试
+<span class="comment"># -*- coding: utf-8 -*-</span>
+<span class="comment"># Author: kaizhang01</span>
+<span class="keyword">import</span> asyncio
+<span class="keyword">import</span> aioredis
+<span class="keyword">import</span> random
+<span class="keyword">import</span> redis
+<span class="keyword">import</span> time
 
-def db_init(self, run=False):
-    if run:
-        print(self.table_name)
-        self.redis.execute(&quot;REDISQL.CREATE_DB&quot;, self.table_name)  # APP实时监测整体表
-        query = f&quot;CREATE TABLE IF NOT EXISTS {self.table_name}(id integer primary key, position text, dt text, req_pv int, sign_show_pv int, click_pv int);&quot;
-        print(query)
-        self.redis.execute(&quot;REDISQL.EXEC&quot;, self.table_name, query)
-        # statement = f&quot;INSERT INTO {table_name} VALUES(1,&apos;1111&apos;);&quot;
-        # print(statement)
-        # self.redis.execute(&quot;REDISQL.EXEC&quot;, table_name, query)
-    return self
 
-def main(self, run=False):
-    &quot;&quot;&quot;测试性能&quot;&quot;&quot;
-    # 写入百万数据，测试查询
-    if run:
-        for i in range(1, 1200000):
-            _p = self.position[random.randint(0, len(self.position) - 1)]
-            _dt = self.dts[random.randint(0, len(self.dts) - 1)]
-            req_pv = random.randint(5000000, 8000000)
-            sign_show_pv = random.randint(3000000, 5000000)
-            click_pv = random.randint(1000000, 2000000)
-            row = f&quot;{i}, &apos;{_p}&apos;, &apos;{_dt}&apos;, {req_pv}, {sign_show_pv}, {click_pv}&quot;
-            # print(row)
-            q = f&quot;INSERT INTO {self.table_name} VALUES({row});&quot;
-            self.redis.execute_command(&quot;REDISQL.EXEC&quot;, self.table_name, q)
-    return self
+<span class="function"><span class="keyword">def</span> <span class="title">conn</span><span class="params">()</span>:</span>
+    loop = asyncio.get_event_loop()
+    conn_co = aioredis.create_pool(<span class="string">'redis://localhost'</span>, minsize=<span class="number">10</span>, maxsize=<span class="number">300</span>, loop=loop)
+    redis_co = asyncio.gather(*[conn_co])
+    redis = loop.run_until_complete(redis_co)
+    redis = redis[<span class="number">0</span>]
+    <span class="keyword">return</span> redis
 
-def select(self):
-    # q1 = f&quot;SELECT dt, position,sum(req_pv) FROM {self.table_name} GROUP BY position,dt&quot;
-    q1 = f&quot;SELECT position, dt, sum(req_pv) as req_pv FROM {self.table_name} GROUP BY dt,position having(sum(req_pv) &gt; 432683005803)  order by position,req_pv desc limit 100&quot;
-    print(q1, &quot;\n&quot;, time.time())
-    X = self.redis.execute_command(&quot;REDISQL.EXEC&quot;, self.table_name, q1)
-    for x in X:
-        print(x)
-    print(time.time())</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    RedisSQL().db_init(True).main(True).select()<br>Todo: 更新数据测试</p>
-<p>结论<br>单线程导入百万数据应该在2分钟左右<br>查询百万：1s<br>复杂SQL: 1s<br>1<br>SELECT position, dt, sum(req_pv) as req_pv FROM adm_rcmd_all_di GROUP BY dt,position having(sum(req_pv) &gt; 432683005803)  order by position,req_pv desc limit 100<br>对于实时数据一般只展示当天最新数据，所以在数据量有限的情况下，比如百万级，可以一试<br>查询rediSQL网上资料很少，wiki给的命令很多也是不靠谱，这也是我要记录下来的原因<br>没有在生产环境得到验证，选择使用可以，但前期一定要有灾备方案.<br>命裏有時終須有，命裏無時莫強求</p>
-<p>end.</p>
+
+<span class="function"><span class="keyword">def</span> <span class="title">new_conn</span><span class="params">()</span>:</span>
+    <span class="comment"># return redis.Redis(host='localhost', port=6379, db=1)</span>
+    <span class="comment"># return redis.StrictRedis(connection_pool =</span>
+    <span class="comment">#         redis.BlockingConnectionPool(</span>
+    <span class="comment">#             max_connections = 15,</span>
+    <span class="comment">#             timeout = 10))</span>
+    <span class="keyword">return</span> redis.StrictRedis(host=<span class="string">'localhost'</span>, port=<span class="number">6379</span>, db=<span class="number">0</span>)
+
+
+<span class="class"><span class="keyword">class</span> <span class="title">RedisSQL</span><span class="params">()</span>:</span>
+    <span class="string">"""redis sql test"""</span>
+
+    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span>
+        self.table_name = <span class="string">'adm_rcmd_all_di'</span>
+        self.redis = new_conn()
+        self.dts = [
+            <span class="string">"2019-09-10"</span>, <span class="string">"2019-09-11"</span>,
+            <span class="string">"2019-09-12"</span>, <span class="string">"2019-09-13"</span>,
+            <span class="string">"2019-09-14"</span>, <span class="string">"2019-09-15"</span>,
+            <span class="string">"2019-09-16"</span>, <span class="string">"2019-09-17"</span>, <span class="string">"2019-09-18"</span>,
+        ]
+        self.authors = [
+            <span class="string">"lisi"</span>,
+            <span class="string">"zhangsan"</span>,
+            <span class="string">"wangqiang"</span>
+        ]
+        self.position = [
+            <span class="string">'0300'</span>, <span class="string">'0200'</span>
+        ]
+
+    <span class="function"><span class="keyword">def</span> <span class="title">db_init</span><span class="params">(self, run=False)</span>:</span>
+        <span class="keyword">if</span> run:
+            print(self.table_name)
+            self.redis.execute(<span class="string">"REDISQL.CREATE_DB"</span>, self.table_name)  <span class="comment"># APP实时监测整体表</span>
+            query = <span class="string">f"CREATE TABLE IF NOT EXISTS <span class="subst">{self.table_name}</span>(id integer primary key, position text, dt text, req_pv int, sign_show_pv int, click_pv int);"</span>
+            print(query)
+            self.redis.execute(<span class="string">"REDISQL.EXEC"</span>, self.table_name, query)
+            <span class="comment"># statement = f"INSERT INTO {table_name} VALUES(1,'1111');"</span>
+            <span class="comment"># print(statement)</span>
+            <span class="comment"># self.redis.execute("REDISQL.EXEC", table_name, query)</span>
+        <span class="keyword">return</span> self
+
+    <span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(self, run=False)</span>:</span>
+        <span class="string">"""测试性能"""</span>
+        <span class="comment"># 写入百万数据，测试查询</span>
+        <span class="keyword">if</span> run:
+            <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">1200000</span>):
+                _p = self.position[random.randint(<span class="number">0</span>, len(self.position) - <span class="number">1</span>)]
+                _dt = self.dts[random.randint(<span class="number">0</span>, len(self.dts) - <span class="number">1</span>)]
+                req_pv = random.randint(<span class="number">5000000</span>, <span class="number">8000000</span>)
+                sign_show_pv = random.randint(<span class="number">3000000</span>, <span class="number">5000000</span>)
+                click_pv = random.randint(<span class="number">1000000</span>, <span class="number">2000000</span>)
+                row = <span class="string">f"<span class="subst">{i}</span>, '<span class="subst">{_p}</span>', '<span class="subst">{_dt}</span>', <span class="subst">{req_pv}</span>, <span class="subst">{sign_show_pv}</span>, <span class="subst">{click_pv}</span>"</span>
+                <span class="comment"># print(row)</span>
+                q = <span class="string">f"INSERT INTO <span class="subst">{self.table_name}</span> VALUES(<span class="subst">{row}</span>);"</span>
+                self.redis.execute_command(<span class="string">"REDISQL.EXEC"</span>, self.table_name, q)
+        <span class="keyword">return</span> self
+
+    <span class="function"><span class="keyword">def</span> <span class="title">select</span><span class="params">(self)</span>:</span>
+        <span class="comment"># q1 = f"SELECT dt, position,sum(req_pv) FROM {self.table_name} GROUP BY position,dt"</span>
+        q1 = <span class="string">f"SELECT position, dt, sum(req_pv) as req_pv FROM <span class="subst">{self.table_name}</span> GROUP BY dt,position having(sum(req_pv) &gt; 432683005803)  order by position,req_pv desc limit 100"</span>
+        print(q1, <span class="string">"\n"</span>, time.time())
+        X = self.redis.execute_command(<span class="string">"REDISQL.EXEC"</span>, self.table_name, q1)
+        <span class="keyword">for</span> x <span class="keyword">in</span> X:
+            print(x)
+        print(time.time())
+
+
+<span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
+    RedisSQL().db_init(<span class="literal">True</span>).main(<span class="literal">True</span>).select()
+Todo: 更新数据测试
+
+结论
+单线程导入百万数据应该在<span class="number">2</span>分钟左右
+查询百万：<span class="number">1</span>s
+复杂SQL: <span class="number">1</span>s
+<span class="number">1</span>
+SELECT position, dt, sum(req_pv) <span class="keyword">as</span> req_pv FROM adm_rcmd_all_di GROUP BY dt,position having(sum(req_pv) &gt; <span class="number">432683005803</span>)  order by position,req_pv desc limit <span class="number">100</span>
+对于实时数据一般只展示当天最新数据，所以在数据量有限的情况下，比如百万级，可以一试
+查询rediSQL网上资料很少，wiki给的命令很多也是不靠谱，这也是我要记录下来的原因
+没有在生产环境得到验证，选择使用可以，但前期一定要有灾备方案.
+命裏有時終須有，命裏無時莫強求
+
+end.</code></pre>
 
       
     </div>
@@ -758,14 +715,6 @@ def select(self):
       <ul>
         
           <li>
-            <a href="/2020/07/02/index-html/">index.html</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/02/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
             <a href="/2020/01/30/shark-lady/">shark_lady</a>
           </li>
         
@@ -777,6 +726,14 @@ def select(self):
             <a href="/2019/10/06/sun-talk/">儿子语录</a>
           </li>
         
+          <li>
+            <a href="/2019/10/04/jlxfd/">教练型辅导模型</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/29/trophy/">The HomeRun Trophy</a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -786,7 +743,7 @@ def select(self):
   <div class="widget-wrap">
     <h3 class="widget-title archive">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
