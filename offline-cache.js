@@ -1,3 +1,17 @@
+function toBase64(url, callback) {
+  const xhr = new XMLHttpRequest();
+  xhr.onload = function() {
+    const reader = new FileReader();
+    reader.onloadend = function() {
+      callback(reader.result);
+    };
+    reader.readAsDataURL(xhr.response);
+  };
+  xhr.open('GET', url);
+  xhr.responseType = 'blob';
+  xhr.send();
+}
+
 async function fetchAndRenderProducts() {
   try {
     const res = await fetch('content-data.json');
@@ -26,7 +40,6 @@ function renderProducts(products) {
   });
 }
 
-// 确保在DOM加载完成后调用此函数
 document.addEventListener('DOMContentLoaded', () => {
   fetchAndRenderProducts();
 });
