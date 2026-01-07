@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>飞行阅读 · 离线版</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>商品展示页面</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1 id="title">加载中…</h1>
-    <div id="content">正在加载内容，请稍候…</div>
-    <p class="hint" id="hint">请在有网络时打开此页面以缓存内容</p>
+  <div id="product-list" class="product-grid">
+    <!-- 商品将在这里动态生成 -->
   </div>
 
   <script src="offline-cache.js"></script>
+  <script>
+    // 示例：在JavaScript中直接包含商品数据
+    const products = [
+      {
+        "name": "商品1",
+        "description": "这是商品1的描述。",
+        "image": "data:image/jpeg;base64,/9j/4AAQSk...(此处为Base64编码的图片数据)"
+      },
+      {
+        "name": "商品2",
+        "description": "这是商品2的描述。",
+        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...(此处为Base64编码的图片数据)"
+      }
+      // 更多商品...
+    ];
+
+    function renderProducts(products) {
+      const productListDiv = document.getElementById('product-list');
+      productListDiv.innerHTML = ''; // 清空原有内容
+
+      products.forEach((product, index) => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product-item');
+
+        productDiv.innerHTML = `
+          <img src="${product.image}" alt="${product.name}">
+          <h2>${product.name}</h2>
+          <p>${product.description}</p>
+        `;
+
+        productListDiv.appendChild(productDiv);
+      });
+    }
+
+    // 页面加载完成后渲染商品
+    window.onload = () => {
+      renderProducts(products);
+    };
+  </script>
 </body>
+
 </html>
