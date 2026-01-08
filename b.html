@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商品列表（支持离线）</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">商品列表</h1>
+    <div id="product-grid" class="product-grid">
+      <!-- 商品由 JS 动态插入 -->
+    </div>
+    <div id="loading" style="text-align: center; padding: 20px;">加载中...</div>
+    <div id="offline-tip" style="display:none; text-align:center; color:#e74c3c; padding:10px;">
+      当前无网络，展示缓存数据
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
