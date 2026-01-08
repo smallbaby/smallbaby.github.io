@@ -79,7 +79,7 @@ async function init() {
     if (products) {
       renderProducts(products);
       // 可选：提示“当前显示缓存数据”
-      alert('网络异常，正在显示缓存数据');
+      console.log('网络异常，正在显示缓存数据');
     } else {
       loadingEl.textContent = '加载失败，请稍后重试';
     }
