@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const { data, fromCache } = await fetchProducts();
     renderProducts(data, fromCache);
   } catch (err) {
-    document.getElementById('loading').textContent = '加载失败，请稍后重试';
+    document.getElementById('loading').textContent = '加载失败，请稍后重试 ' + err;
     console.error(err);
   }
 
