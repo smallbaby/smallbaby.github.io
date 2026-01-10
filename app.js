@@ -1,5 +1,5 @@
 const CACHE_NAME = 'products-cache-v1';
-const PRODUCT_API = 'https://fakestoreapi.com/products';
+const PRODUCT_API = 'http://114.132.189.203:5000/api/products';
 
 // 检查是否在线
 function isOnline() {
@@ -50,9 +50,9 @@ function renderProducts(products, fromCache = false) {
 
   grid.innerHTML = products.slice(0, 8).map(p => `
     <div class="product-card">
-      <img class="product-image" src="${p.image}" alt="${p.title}" onerror="this.style.backgroundColor='#ddd'">
-      <h3>${p.title}</h3>
-      <p class="price">¥${p.price.toFixed(2)}</p>
+      <img class="product-image" src="${p.image}" alt="${p.name}" onerror="this.style.backgroundColor='#ddd'">
+      <h3>${p.name}</h3>
+      <p class="price">¥${p.price}</p>
     </div>
   `).join('');
 }
