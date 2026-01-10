@@ -1,5 +1,5 @@
 const CACHE_NAME = 'products-cache-v1';
-const PRODUCT_API = 'http://114.132.189.203:5000/api/products';
+const PRODUCT_API = 'https://114.132.189.203:5000/api/products';
 
 // 检查是否在线
 function isOnline() {
